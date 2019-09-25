@@ -1,0 +1,1 @@
+../libcamera/Documentation/coding-style.rst
