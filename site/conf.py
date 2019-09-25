@@ -16,6 +16,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import ablog
 
 # -- Project information -----------------------------------------------------
 
@@ -36,6 +37,7 @@ author = u'Kieran Bingham, Jacopo Mondi, Laurent Pinchart, Niklas Söderlund'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+	'ablog',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -94,3 +96,18 @@ html_static_path = []
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
+
+
+# -- Options for ablog output -------------------------------------------------
+
+# Support ABlog templates
+templates_path.append(ablog.get_html_templates_path())
+
+blog_baseurl = 'libcamera.org'
+
+html_sidebars = {
+   '**': [...,
+          'postcard.html', 'recentposts.html',
+          'tagcloud.html', 'categories.html',
+          'archives.html', ]
+}
