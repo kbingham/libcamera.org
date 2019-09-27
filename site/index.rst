@@ -9,5 +9,6 @@
    Docs <docs>
    Coding Style <coding-style>
    Contribute <contributing>
+   Blog <blog>
    API <api-html/index>
    
