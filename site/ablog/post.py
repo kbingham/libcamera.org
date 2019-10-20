@@ -299,10 +299,11 @@ def process_posts(app, doctree):
         else:
             node.replace_self([])
         nimg = node["image"] or blog.post_auto_image
+        image = None
         if nimg:
             for img, nod in enumerate(section.traverse(nodes.image), start=1):
                 if img == nimg:
-                    excerpt.append(nod.deepcopy())
+                    image = nod
                     break
         date = node["date"]
         if date:
@@ -370,7 +371,7 @@ def process_posts(app, doctree):
             "language": node["language"],
             "redirect": node["redirect"],
             "nocomments": node["nocomments"],
-            "image": node["image"],
+            "image": image,
             "exclude": node["exclude"],
             "doctree": section_copy,
         }
@@ -442,8 +443,14 @@ def process_postlist(app, doctree, docname):
         for post in posts:
             bli = nodes.list_item()
             bl.append(bli)
+
+            if post.image and blog.post_image_position == "before":
+                bli.append(post.image.deepcopy())
+
+            cont = nodes.container()
+            bli.append(cont)
             par = nodes.paragraph()
-            bli.append(par)
+            cont.append(par)
 
             for text, key, __, __ in fmts:
                 if text:
@@ -474,13 +481,17 @@ def process_postlist(app, doctree, docname):
                         par.append(ref)
                         if i < len(items):
                             par.append(nodes.Text(", "))
+
             if excerpts and post.excerpt:
                 for enode in post.excerpt:
                     enode = enode.deepcopy()
                     revise_pending_xrefs(enode, docname)
                     app.env.resolve_references(enode, docname, app.builder)
-                    enode.parent = bli.parent
-                    bli.append(enode)
+                    enode.parent = cont.parent
+                    cont.append(enode)
+
+            if post.image and blog.post_image_position != "before":
+                bli.append(post.image.deepcopy())
 
         node.replace_self(bl)
 

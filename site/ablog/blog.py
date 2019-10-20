@@ -82,6 +82,7 @@ CONFIG = [
     ("post_auto_image", 0, True),
     ("post_auto_excerpt", 1, True),
     ("post_auto_orphan", True, True),
+    ("post_image_position", "after", True),
     ("post_redirect_refresh", 5, True),
     ("post_always_section", False, True),
     ("disqus_shortname", None, True),
@@ -363,6 +364,7 @@ class Post(BlogPageMixin):
         self.draft = not self.published
         self._title = info["title"]
         self.excerpt = info["excerpt"]
+        self.image = info["image"]
         self.doctree = info["doctree"]
         self._next = self._prev = -1
         self._computed_date = date or FUTURE
@@ -421,6 +423,8 @@ class Post(BlogPageMixin):
             else:
                 doctree.append(deepcopy)
         else:
+            if self.image:
+                doctree.append(self.image.deepcopy())
             for node in self.excerpt:
                 doctree.append(node.deepcopy())
         app = self._blog.app
