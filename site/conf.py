@@ -97,6 +97,7 @@ html_static_path = []
 #
 # html_sidebars = {}
 
+html_copy_source = False
 
 # -- Options for ablog output -------------------------------------------------
 
