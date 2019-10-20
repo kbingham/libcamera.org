@@ -1,0 +1,1 @@
+../../libcamera/Documentation/api-html/index.rst
