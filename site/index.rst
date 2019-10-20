@@ -1,14 +1,15 @@
 .. Front page matter is defined in the project README file.
-.. include:: ../libcamera/README.rst
+.. include:: ../README.rst
+   :start-after: .. section-begin-libcamera
+   :end-before: .. section-end-libcamera
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
    Home <self>
-   Docs <docs>
-   Coding Style <coding-style>
+   Getting Started <getting-started>
    Contribute <contributing>
+   Docs <docs>
    Blog <blog>
-   API <api-html/index>
-   
+
