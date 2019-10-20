@@ -1,0 +1,33 @@
+@import "theme.css";
+
+#libcamera #what-s-new {
+	margin-top: 50px;
+}
+
+ul.postlist {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul.postlist li {
+	clear: both;
+}
+
+ul.postlist li:not(:first-child) {
+	border-top: 1px dotted #4896e0;
+	padding-top: 20px;
+}
+
+ul.postlist li div {
+	margin-left: 110px;
+}
+
+ul.postlist li p:first-child {
+	margin-top: 0px;
+}
+
+ul.postlist img {
+	float: left;
+	margin-right: 10px;
+}
