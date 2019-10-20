@@ -98,6 +98,7 @@ html_static_path = []
 # html_sidebars = {}
 
 html_copy_source = False
+html_title = 'libcamera'
 
 # -- Options for ablog output -------------------------------------------------
 
