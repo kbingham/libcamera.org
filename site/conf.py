@@ -106,6 +106,7 @@ html_title = 'libcamera'
 templates_path.append(ablog.get_html_templates_path())
 
 blog_baseurl = 'libcamera.org'
+post_image_position = 'before'
 
 html_sidebars = {
    'entries/*': [...,
