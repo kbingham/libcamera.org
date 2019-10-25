@@ -11,7 +11,7 @@ What's New
    :format: {date} - {title}
    :excerpts:
 
-:ref:`Older entries <blog-index>`
+:ref:`Older entries <blog-posts>`
 
 .. toctree::
    :maxdepth: 1
@@ -24,6 +24,6 @@ What's New
 
 .. toctree::
    :hidden:
+   :glob:
 
-   Blog <blog>
-
+   entries/*
