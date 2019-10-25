@@ -1,0 +1,18 @@
+.. post:: 26 October 2019
+   :category: conference
+   :author: Laurent
+   :language: en
+   :image: 1
+
+
+libcamera @ELCE 2019
+--------------------
+
+.. image:: logo_elc_eu_2019.png
+
+Jacopo will launch the call for public API review with his `talk at the
+Embedded Linux Conference 2019`_. We will hold a libcamera workshop the
+following morning to review the API and discuss use cases. If you would like to
+attend the workshop, please `let us know <mailto:info@libcamera.org>`_.
+
+.. _talk at the Embedded Linux Conference 2019: https://osseu19.sched.com/event/TPu5/the-first-stable-libcamera-release-a-call-for-public-api-review-jacopo-mondi-independent
