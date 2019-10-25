@@ -106,8 +106,9 @@ templates_path.append(ablog.get_html_templates_path())
 blog_baseurl = 'libcamera.org'
 
 html_sidebars = {
-   'entries/*': [...,
+   'entries/*': [
           'postcard.html', 'recentposts.html',
           'tagcloud.html', 'categories.html',
-          'archives.html', ]
+          'archives.html',
+    ]
 }
