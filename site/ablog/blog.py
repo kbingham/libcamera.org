@@ -195,7 +195,9 @@ class Blog(Container):
             for label, (name, link) in items:
                 catalog[label] = Collection(catalog, label, name, link)
 
-        self.posts = self.blog["post"] = Collection(self.blog, "post", "Posts", path=self.blog_path)
+        self.posts = self.blog["post"] = Collection(
+            self.blog, "post", "Posts", path=os_path_join(self.blog_path, "index")
+        )
         self.drafts = self.blog["draft"] = Collection(
             self.blog, "draft", "Drafts", path=os_path_join(self.blog_path, "drafts")
         )
