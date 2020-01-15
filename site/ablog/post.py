@@ -13,6 +13,7 @@ from docutils import nodes
 from docutils.parsers.rst import Directive, directives
 from docutils.parsers.rst.directives.admonitions import BaseAdmonition
 from sphinx.locale import _
+from sphinx.util import logging
 from sphinx.util.nodes import set_source_info
 
 import ablog
@@ -622,7 +623,8 @@ def generate_atom_feeds(app):
     try:
         from werkzeug.contrib.atom import AtomFeed
     except ImportError:
-        app.warn("werkzeug is not found, continue without atom feeds support.")
+        logger = logging.getLogger(__name__)
+        logger.warning("werkzeug is not found, continue without atom feeds support.")
         return
 
     feed_path = os.path.join(app.builder.outdir, blog.blog_path, "atom.xml")
