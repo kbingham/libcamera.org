@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>libcamera.org</title>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="shortcut icon" type="image/png" href="images/favicon80x80.png"/>
+<link rel="shortcut icon" type="image/png" href="http://example.com/favicon.png"/>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body class="master-page">
+<header id="main-nav">
+	<div class="logo-img">
+        <div><a href="libcamera_2.html"><img class="logo" src="images/libcamera-logo.png" width="160"></a></div>
+        </div>
+  <nav>
+    <ul>
+      <li class="active"><a href="libcamera_2.html">Home</a></li>
+      <li><a href="./getting-started.html" target="
+          ">Getting Started</a></li>
+      <li><a href="https://libcamera.org/contributing.html" target="
+          ">Contribute</a></li>
+      <li><a href="https://libcamera.org/docs.html" target="
+          ">Docs</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="head-banner">
+      <div class="banner-row">
+    	<div class="column">
+            <img class="bubble" src="images/libcamera_library.png">
+        </div>
+        <div class="column">
+            <div class="intro">
+                <h1>Hi, we're</h1>
+                <h1><span style="color: #4a9bd9;">libcamera.</span></h1>
+                <p>A complex camera support library for Linux, Android, and ChromeOS</p>
+                <a class="banner-button" href="https://libcamera.org/getting-started.html" target="
+          ">Getting started</a>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<section class="about-section">
+    <article style="width: 100%;">
+        <div class="about">
+        <h2>About <span class="heading-change">libcamera</span></h2>
+        <p>Cameras are complex devices that need heavy hardware image processing operations. Control of the processing is based on advanced algorithms that must run on a programmable processor. This has traditionally been implemented in a dedicated MCU in the camera, but in embedded devices algorithms have been moved to the main CPU to save cost. Blurring the boundary between camera devices and Linux often left the user with no other option than a vendor-specific closed-source solution.
+        <br><br>
+        To address this problem the Linux media community has very recently started collaboration with the industry to develop a camera stack that will be open-source-friendly while still protecting vendor core IP. libcamera was born out of that collaboration and will offer modern camera support to Linux-based systems, including traditional Linux distributions, ChromeOS and Android.</p>
+        
+        <a class="about-btn" href="https://libcamera.org/contributing.html" target="
+          ">Contribute to the project</a>
+        </div>
+    </article>
+</section>
+
+<section class="blog-section">
+    <article >
+        <div class="blog">
+            <div class="column">
+                <img class="featured" src="images/Blog-Featured-Image.png">
+                <h3>ELCE 2019 recording now available</h3>
+                <p>Jacopo’s talk “A call for Public API Review” is now available on youtube.</p>
+            </div>
+            <div class="column">
+                <img class="featured" src="images/Blog-Featured-Image.png">
+                <h3>libcamera @ELCE 2019</h3>
+                <p>Jacopo will launch the call for public API review with his talk at the Embedded Linux Conference 2019</p>
+            </div>
+            <div class="column">
+                <img class="featured" src="images/Blog-Featured-Image.png">
+                <h3>Hello World!</h3>
+                <p>We now have a brand new What’s New section.</p></div>
+        </div> 
+    </article>
+</section>
+
+<footer class="footer-top">
+  <p>© Copyright 2018-2019, The libcamera documentation authors.</p>
+</footer>
+<footer class="footer-bottom">
+</footer>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("main-nav");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
