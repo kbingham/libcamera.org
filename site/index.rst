@@ -51,3 +51,4 @@ What's New
    :glob:
 
    entries/*
+   Discuss <discuss>
