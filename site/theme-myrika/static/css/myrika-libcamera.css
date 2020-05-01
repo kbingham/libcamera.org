@@ -103,7 +103,11 @@ body, h1, h2, h3, h4,h5, h6, p {
     margin-top: 1500px!important;
 }
 
-#getting-started, #contributing, #documentation {
+/*
+ * Match all of the first 'sections' for every page.
+ * Pulls the width and positioning for each overall layout.
+ */
+#content > .block > div.section:first-of-type {
 	padding: 0 15%;
 	max-width: 800px;
 }
