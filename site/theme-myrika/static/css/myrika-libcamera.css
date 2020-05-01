@@ -145,22 +145,6 @@ dt {
 	display: none;
 }
 
-#what-s-new > p > a {
-	background-image: linear-gradient(90deg, #4a9cd8 , #4da5ce);
-	border-radius: 100px;
-	color: #fff;
-	border: 0px;
-	padding: 15px 40px;
-	font-size: 15px;
-	font-weight: 700;
-	text-decoration: none;
-}
-
-#what-s-new > p > a:hover {
-	background-color: #4faac9;
-	background-image: linear-gradient(90deg, #4da5ce, #4a9cd8);
-}
-
 /******************************************************************************/
 /*  NAVIGATION BAR                                                            */
 /******************************************************************************/
@@ -304,7 +288,15 @@ nav li .current a, nav .active a {
 	margin-bottom: 60px;
 }
 
-#welcome p a {
+
+/*
+ * Pill buttons used on home page, Hero, About, and What's new sections.
+ * About is recoloured in it's section.
+ * #what-s-new is targetted to prevent picking up blog links.
+ */
+#welcome p a,
+#about p > a,
+#what-s-new > p > a {
 	background-image: linear-gradient(90deg, #4a9cd8 , #4da5ce);
 	border-radius: 100px;
 	color: #fff;
@@ -315,7 +307,9 @@ nav li .current a, nav .active a {
 	text-decoration: none;
 }
 
-#welcome p a:hover {
+#welcome p > a:hover,
+#about p > a:hover,
+#what-s-new > p > a:hover {
 	background-color: #4faac9;
 	background-image: linear-gradient(90deg, #4da5ce, #4a9cd8);
 }
@@ -362,20 +356,14 @@ nav li .current a, nav .active a {
 	margin-top: 60px;
 }
 
+/* Restyle the link pill to adapt for the different background colour. */
 #about p a {
-	border-radius: 100px;
-	border: 0px solid;
-	padding: 15px 40px;
-	font-size: 15px;
-	font-weight: 700;
-	text-decoration: none;
 	background: #fff;
 	color: #4a9cd8;
 }
 
 #about p a:hover {
-	background: #3d8dcb;
-	color: #fff!important;
+	color: white;
 }
 
 /*  BLOG SECTION    */
