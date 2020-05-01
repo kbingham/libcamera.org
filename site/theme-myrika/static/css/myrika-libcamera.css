@@ -107,6 +107,7 @@ body, h1, h2, h3, h4,h5, h6, p {
 #content > .block > div.section:first-of-type {
 	padding: 0 15%;
 	max-width: 800px;
+	padding-bottom: 80px!important;
 }
 
 div.highlight-shell > div.highlight > pre,
@@ -423,19 +424,8 @@ nav li .current a, nav .active a {
 }
 
 /******************************************************************************/
-/*  CONTRIBUTING                                                              */
-/******************************************************************************/
-
-
-#content .block #contributing #documentation {
-    padding: 0 0%!important;
-}
-
-
-/******************************************************************************/
 /*  DOCS                                                                      */
 /******************************************************************************/
-
 
 /*  Docs Information */
 
@@ -447,9 +437,13 @@ div.highlight-default > div.highlight > pre {
     margin-bottom: 40px;
 }
 
-#documentation {
-    padding: 0 25%;
-    max-width: 50%;
+/*
+ * Indent with padding to adjust for side bar.
+ * Explicitly match this to prevent clashing on Contribute.
+ */
+#content > .block > #documentation {
+	padding-left: 25%;
+	max-width: 50%;
 }
 
 /*  Docs Side Bar   */
