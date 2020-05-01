@@ -316,17 +316,14 @@ nav li .current a, nav .active a {
 	background: #4a9cd8;
 }
 
-#libcamera {
-    height: 100%;
-    padding: 50px 0px 100px 0px;
-}
-
 /* Don't display the about section header */
 #about h1 {
 	visibility: hidden;
 }
 
 #libcamera {
+	height: 100%;
+	padding: 50px 0px 100px 0px;
 	margin: auto;
 	width: 70%;
 }
