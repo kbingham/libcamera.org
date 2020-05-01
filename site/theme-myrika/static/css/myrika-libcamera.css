@@ -39,6 +39,7 @@ h6:hover a.headerlink {
 }
 
 #content {
+	/* Pad to below the navbar */
 	padding-top: 100px;
     background: url('../images/Libcamera-Background-White.jpg') no-repeat center center fixed; 
         -webkit-background-size: cover;
@@ -66,10 +67,6 @@ body, h1, h2, h3, h4,h5, h6, p {
 
 .highlight {
     margin-top: 20px;
-}
-
-#getting-started h1, #documentation h1, #contributing h1 {
-    padding-top: 50px;
 }
 
 #getting-started h2, #documentation h2, #contributing h2 {
@@ -249,7 +246,6 @@ nav li .current a, nav .active a {
 
 #welcome .hero {
 	min-height: 100vh;
-	margin-top: -100px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr;
@@ -413,15 +409,6 @@ nav li .current a, nav .active a {
 
 .postlist li {
     padding: 30px;
-}
-
-/******************************************************************************/
-/*  GETTING STARTED                                                           */
-/******************************************************************************/
-
-
-#getting-started {
-    margin-top: 50px;
 }
 
 /******************************************************************************/
