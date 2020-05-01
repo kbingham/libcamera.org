@@ -11,7 +11,6 @@ libcamera_git_url="git-libcamera-org@git.libcamera.org:libcamera/libcamera.git"
 
 html_dir=${PWD}/html
 libcamera_dir=${PWD}/libcamera
-site_dir=${PWD}/site
 
 cleanup() {
 	if [[ "${keep}" == true && $1 != force ]] ; then
