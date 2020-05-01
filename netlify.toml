@@ -1,0 +1,3 @@
+[build]
+  publish = "public"
+  command = "./build.sh -s -l git://linuxtv.org/libcamera.git -w public"

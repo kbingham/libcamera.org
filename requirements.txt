@@ -1,0 +1,2 @@
+sphinx
+meson>=0.49
