@@ -38,8 +38,10 @@ compile_doxygen() {
 
 compile_site() {
 	sphinx-build -b html site/ "${html_dir}"
-	rm -rf "${html_dir}/api-html"
-	mv "${libcamera_dir}/build/Documentation/api-html" "${html_dir}/"
+	if [[ -z ${skip_doxygen} ]] ; then
+		rm -rf "${html_dir}/api-html"
+		mv "${libcamera_dir}/build/Documentation/api-html" "${html_dir}/"
+	fi
 }
 
 deploy() {
@@ -73,6 +75,10 @@ parse_options() {
 			libcamera_url="$2"
 			shift 2
 			;;
+		-s|--skip-doxygen)
+			skip_doxygen=true
+			shift
+			;;
 		-w|--www)
 			deploy_dir="$2"
 			shift 2
@@ -102,6 +108,7 @@ usage() {
 	echo "-h, --help              Display this help text" >&2
 	echo "-w, --www dir           Deploy website to given directory" >&2
 	echo "-k, --keep              Keep build artifacts" >&2
+	echo "-s, --skip-doxygen      Skip doxygen generator" >&2
 	echo "-l, --libcamera url     libcamera sources URL (default: ${libcamera_git_url}" >&2
 }
 
@@ -125,7 +132,11 @@ trap "report_error; cleanup" EXIT
 
 cleanup force
 checkout_libcamera
-compile_doxygen
+
+if [[ -z "${skip_doxygen}" ]] ; then
+	compile_doxygen
+fi
+
 compile_site
 
 if [[ ! -z "${deploy_dir}" ]] ; then
