@@ -8,7 +8,7 @@
 ELCE 2019 recording now available
 ---------------------------------
 
-.. image:: libcamera-jmondi.png
+.. image:: libcamera-banner.png
 
 Jacopo's talk "A call for Public API Review" is now available on `youtube`_.
 
