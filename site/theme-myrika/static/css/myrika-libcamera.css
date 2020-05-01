@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans');
+
+
+/******************************************************************************/
+/*  SPHINX STYLING                                                            */
+/******************************************************************************/
+
+a {
+	color: unset;
+	font-weight: bold;
+	text-decoration: underline dotted;
+}
+
+a.headerlink {
+	color: rgba(0, 0, 0, 0.2);
+	font-size: 70%;
+	padding-left: 5px;
+	visibility: hidden;
+}
+
+a.headerlink {
+	color: rgba(0, 0, 0, 0.2);
+	font-size: 70%;
+	padding-left: 5px;
+	visibility: hidden;
+}
+
+a.toc-backref {
+	text-decoration: none;
+}
+
+h1:hover a.headerlink,
+h2:hover a.headerlink,
+h3:hover a.headerlink,
+h4:hover a.headerlink,
+h5:hover a.headerlink,
+h6:hover a.headerlink {
+	visibility: visible;
+}
+
+#content {
+	padding-top: 100px;
+    background: url('../images/Libcamera-Background-White.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+#welcome .hero {
+    background-repeat: no-repeat!important;
+}
+
+/******************************************************************************/
+/*  GENERAL CSS                                                               */
+/******************************************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, h1, h2, h3, h4,h5, h6, p {
+  font-family: 'Nunito Sans';
+}
+
+.highlight {
+    margin-top: 20px;
+}
+
+#getting-started h1, #documentation h1, #contributing h1 {
+    padding-top: 50px;
+}
+
+#getting-started h2, #documentation h2, #contributing h2 {
+    padding: 30px 0px 10px 0px;
+}
+
+#getting-started h3, #documentation h3, #contributing h3 {
+    padding: 30px 0px 10px 0px;
+}
+
+.page-title {
+        height: 300px;
+        background-image: url("./images/Libcamera-Background-White.jpg");
+        background-attachment: fixed;
+    }
+
+.heading-title {
+    margin: auto;
+    padding: 40px 0px
+}
+
+.page-title {
+    font-size: 50px;
+}
+
+.page-subhead {
+    font-size: 40px;
+}
+
+.toc-backref {
+    margin-top: 1500px!important;
+}
+
+#getting-started, #contributing, #documentation {
+	padding: 0 15%;
+	max-width: 800px;
+}
+
+div.highlight-shell > div.highlight > pre,
+pre.console {
+	background-color: #fcfcff;
+	border: 1px dotted #4896e0;
+	margin-left: 0em;
+	padding: 10px;
+	text-align: left;
+}
+
+div.highlight-default > div.highlight > pre,
+pre.diagram {
+	background-color: #fcfcff;
+	border: 1px dotted #4896e0;
+	font-size: 12px;
+	margin-left: 0em;
+	padding: 10px;
+	text-align: left;
+	width: 47em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+/* Disable the toctree view */
+#what-s-new div.toctree-wrapper {
+	height: 0px;
+	margin: 0px;
+	padding: 0px;
+	visibility: hidden;
+	display: none;
+}
+
+#what-s-new > p > a {
+	background-image: linear-gradient(90deg, #4a9cd8 , #4da5ce);
+	border-radius: 100px;
+	color: #fff;
+	border: 0px;
+	padding: 15px 40px;
+	font-size: 15px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+#what-s-new > p > a:hover {
+	background-color: #4faac9;
+	background-image: linear-gradient(90deg, #4da5ce, #4a9cd8);
+}
+
+/******************************************************************************/
+/*  NAVIGATION BAR                                                            */
+/******************************************************************************/
+
+/* LIBCAMERA BRANDING */
+
+/* "lib" */   
+.text-light {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/*  NAVIGATION  */
+
+.caption {
+	display: none;
+}
+
+.searchbox {
+	display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+    transition: 0.7s;
+}
+    
+.logo {
+    float: left;
+    margin-left: 80px;
+    padding: 0px 25px 14px;
+    background-image: linear-gradient(90deg, #4a9cd8 , #4da5ce);
+    border-radius: 0px 0px 30px 30px;
+    font-weight: 900;
+}
+
+div.navbar-logo {
+	font-size: 12px;
+	float: left;
+	font-family: monospace;
+	font-weight: bold;
+	white-space: pre;
+	color: white;
+}
+
+div.navbar-name {
+	float: left;
+	color: rgb(255, 255, 255, 1.0);
+	font-size: 24px;
+	margin-top: 18px;
+	margin-left: 10px;
+	padding-top: 1px;
+}
+
+nav {
+    float: right;
+    padding: 15px;
+    margin: 5px 0px;
+}
+    
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+nav li .current, nav .active, nav li a:hover {
+  background-color: #4a9bd9;
+    border-radius: 100px;
+  color: #fff;
+}
+
+nav li .current a, nav .active a {
+    color: #fff;
+}
+
+/******************************************************************************/
+/*  HOME                                                                      */
+/******************************************************************************/
+
+/* Front page Hero */
+
+/* Don't display the welcome section header */
+#welcome h1 {
+	display: none;
+}
+
+#welcome .hero {
+	min-height: 100vh;
+	margin-top: -100px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	grid-template-areas: "hero text";
+	align-items: center;
+	justify-items: center;
+}
+
+/* Hero Image */
+#welcome .heroimage {
+	grid-area: hero;
+}
+
+/* Hero Text */
+#welcome .herotext {
+	grid-area: text;
+}
+
+#welcome p:first-of-type {
+	padding-top: 250px;
+	font-size: 110px;
+	font-weight: 300;
+	line-height: 90px;
+	margin-bottom: 40px;
+	font-weight: 700;
+}
+
+#welcome p strong {
+	color: #4a9bd9;
+}
+
+#welcome p {
+	font-weight: 700;
+	margin-bottom: 60px;
+}
+
+#welcome p a {
+	background-image: linear-gradient(90deg, #4a9cd8 , #4da5ce);
+	border-radius: 100px;
+	color: #fff;
+	border: 0px;
+	padding: 15px 40px;
+	font-size: 15px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+#welcome p a:hover {
+	background-color: #4faac9;
+	background-image: linear-gradient(90deg, #4da5ce, #4a9cd8);
+}
+
+/*  ABOUT   */
+
+#about {
+	background: #4a9cd8;
+}
+
+#libcamera {
+    height: 100%;
+    padding: 50px 0px 100px 0px;
+}
+
+/* Don't display the about section header */
+#about h1 {
+	visibility: hidden;
+}
+
+#libcamera {
+	margin: auto;
+	width: 70%;
+}
+
+#about h2:before {
+	content: "About ";
+}
+
+#about h2 {
+	font-size: 50px;
+	margin-bottom: 50px;
+	color: #fff;
+}
+
+#about p {
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+/* Padding between about text and Contribute button */
+#about p:last-of-type {
+	margin-top: 60px;
+}
+
+#about p a {
+	border-radius: 100px;
+	border: 0px solid;
+	padding: 15px 40px;
+	font-size: 15px;
+	font-weight: 700;
+	text-decoration: none;
+	background: #fff;
+	color: #4a9cd8;
+}
+
+#about p a:hover {
+	background: #3d8dcb;
+	color: #fff!important;
+}
+
+/*  BLOG SECTION    */
+
+#what-s-new h1 {
+	display: none;
+}
+
+#what-s-new {
+	width: 100%;
+	padding: 50px 0px 50px;
+	color: #595959;
+    background: #fff;
+}
+
+#what-s-new ul {
+	width: 70%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+#what-s-new ul img {
+	margin: 0% 00%;
+	width: 100%;
+	border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+#what-s-new ul p:first-of-type {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#what-s-new ul p {
+	padding: 0px 10px 0px 0px;
+}
+
+#what-s-new > p {
+    text-align: center!important;
+    margin-top: 50px;
+}
+
+.postlist li {
+    padding: 30px;
+}
+
+/******************************************************************************/
+/*  GETTING STARTED                                                           */
+/******************************************************************************/
+
+
+#getting-started {
+    margin-top: 50px;
+}
+
+/******************************************************************************/
+/*  CONTRIBUTING                                                              */
+/******************************************************************************/
+
+#contributing, #documentation, #getting-started {
+    padding-bottom: 80px!important;
+}
+
+#content .block #contributing #documentation {
+    padding: 0 0%!important;
+}
+
+
+/******************************************************************************/
+/*  DOCS                                                                      */
+/******************************************************************************/
+
+
+/*  Docs Information */
+
+div.highlight-default > div.highlight > pre {
+    width: 100%;
+}
+
+.highlight {
+    margin-bottom: 40px;
+}
+
+#documentation {
+    padding: 0 25%;
+    max-width: 50%;
+}
+
+/*  Docs Side Bar   */
+
+#contents {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #4a9bd9;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    margin-top: -18px;
+}
+
+#contents .simple a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.simple a:hover {
+    background: #fff;
+    color: #4a9bd9!important;
+}
+
+/******************************************************************************/
+/* Footer                                                                     */
+/******************************************************************************/
+
+footer, .footer-top {
+	/* White/Grey background... */
+	background: #f9f9f9;
+
+	/* Or linear blue gradient */
+	background-image: linear-gradient(90deg, #4a9cd8 , #4da5ce);
+
+	padding: 10px;
+	font-size: 12px;
+	color: #d6d6d6;
+	text-align: right;
+	padding-right: 20px;
+}
+
+/******************************************************************************/
+/* RESPONSIVENESS                                                             */
+/******************************************************************************/
+
+
+@media only screen and (max-width: 700px) {
+    
+    .column {
+        width: 100%;
+    }
+    
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+    
+    h1 {
+        padding-top: 20px;
+    }
+
+    h2 {
+        padding: 10px 0px 10px 0px;
+    }
+
+    h3 {
+        padding: 10px 0px 10px 0px;
+    }
+    
+    div.highlight-default > div.highlight > pre, div.highlight-shell > div.highlight > pre {
+        width: 95%;
+    }
+    
+    #welcome .heroimage {
+        display: none;
+    }
+    
+    #welcome p:first-of-type {
+        font-size: 65px!important;
+        line-height: 65px;
+        font-weight: bold!important;
+        text-align: center;
+        padding-top: 300px;
+    }
+    
+    .herotext p:last-of-type { 
+        padding-top: 80px;
+    }
+    
+    #welcome p {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    #welcome .hero {
+        display: block;
+    }
+    
+    #about {
+	background: #4a9cd8;
+	height: 100%;
+    }
+    
+    #about h1 {
+        padding-top: 30px;
+	   visibility: hidden;
+    }
+    
+    #what-s-new ul {
+	width: 70%;
+	margin: auto;
+	display: block;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+      float: left;
+    }
+
+    div.content {
+      margin-left: 0;
+    }
+    
+    #documentation {
+    padding: 0 15%;
+    max-width: 100%;
+}
+    
+    #contents {
+    width: 100%;
+    position: static;
+    margin-top: 95px;
+}
+    
+    #contributing {
+        margin-top: 120px;
+    }
+    
+    pre {
+       display: none;
+    }
+    
+    #what-s-new ul {
+	width: 90%;
+    }
+    
+
+}
