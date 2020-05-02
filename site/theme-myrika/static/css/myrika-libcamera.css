@@ -77,6 +77,19 @@ body, h1, h2, h3, h4,h5, h6, p {
     padding: 30px 0px 10px 0px;
 }
 
+/* Used for feature descriptions and FAQ titles */
+dt {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+/* Used for feature package requirements and FAQ answers. */
+dd {
+	margin-left: 40px;
+	margin-top: 5px;
+}
+
+
 .page-title {
         height: 300px;
         background-image: url("./images/Libcamera-Background-White.jpg");
@@ -414,16 +427,6 @@ pre.console {
 
 	/* Allow for 'scroll' in small view ports (mobile). */
 	overflow-x: auto;
-}
-
-/* Embolden feature requirements. */
-.block > #getting-started dt {
-	font-weight: bold;
-}
-
-/* Indent package dependencies. */
-.block > #getting-started dd {
-	margin-left: 40px;
 }
 
 /******************************************************************************/
