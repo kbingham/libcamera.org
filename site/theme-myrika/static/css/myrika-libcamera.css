@@ -110,25 +110,6 @@ body, h1, h2, h3, h4,h5, h6, p {
 	padding-bottom: 80px!important;
 }
 
-div.highlight-shell > div.highlight > pre,
-pre.console {
-	background-color: #fcfcff;
-	border: 1px dotted #4896e0;
-	margin-left: 0em;
-	padding: 10px;
-	text-align: left;
-}
-
-div.highlight-default > div.highlight > pre,
-pre.diagram {
-	background-color: #fcfcff;
-	border: 1px dotted #4896e0;
-	font-size: 12px;
-	margin-left: 0em;
-	padding: 10px;
-	text-align: left;
-	width: 47em;
-}
 
 /* Disable the toctree view */
 #what-s-new div.toctree-wrapper {
@@ -281,7 +262,6 @@ nav li .current a, nav .active a {
 	margin-bottom: 60px;
 }
 
-
 /*
  * Pill buttons used on home page, Hero, About, and What's new sections.
  * About is recoloured in it's section.
@@ -420,10 +400,23 @@ nav li .current a, nav .active a {
 }
 
 /******************************************************************************/
-/*  Getting Started                                                           */
+/*  Getting Started / Contribute                                              */
 /******************************************************************************/
 
-/* Embolden feature requirements */
+/* Style the pre sections for code/cmdline segments. */
+div.highlight-shell > div.highlight > pre,
+pre.console {
+	background-color: #fcfcff;
+	border: 1px dotted #4896e0;
+	margin-left: 0em;
+	padding: 10px;
+	text-align: left;
+
+	/* Allow for 'scroll' in small view ports (mobile). */
+	overflow-x: auto;
+}
+
+/* Embolden feature requirements. */
 .block > #getting-started dt {
 	font-weight: bold;
 }
@@ -438,6 +431,21 @@ nav li .current a, nav .active a {
 /******************************************************************************/
 
 /*  Docs Information */
+
+/* Style the pre sections for ascii diagrams. */
+div.highlight-default > div.highlight > pre,
+pre.diagram {
+	background-color: #fcfcff;
+	border: 1px dotted #4896e0;
+	font-size: 12px;
+	margin-left: 0em;
+	padding: 10px;
+	text-align: left;
+	width: 47em;
+
+	/* Allow for 'scroll' in small view ports (mobile). */
+	overflow-x: auto;
+}
 
 div.highlight-default > div.highlight > pre {
     width: 100%;
