@@ -21,7 +21,7 @@ import ablog
 # -- Project information -----------------------------------------------------
 
 project = 'libcamera'
-copyright = '2018-2019, The libcamera documentation authors'
+copyright = '2018-2020, The libcamera documentation authors'
 author = u'Kieran Bingham, Jacopo Mondi, Laurent Pinchart, Niklas Söderlund'
 
 # Version information is provided by the build environment, through the
