@@ -69,11 +69,11 @@ body, h1, h2, h3, h4,h5, h6, p {
     margin-top: 20px;
 }
 
-#getting-started h2, #documentation h2, #contributing h2 {
+h2 {
     padding: 30px 0px 10px 0px;
 }
 
-#getting-started h3, #documentation h3, #contributing h3 {
+h3 {
     padding: 30px 0px 10px 0px;
 }
 
