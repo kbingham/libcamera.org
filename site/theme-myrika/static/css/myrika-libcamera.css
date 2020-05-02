@@ -130,10 +130,6 @@ pre.diagram {
 	width: 47em;
 }
 
-dt {
-	font-weight: bold;
-}
-
 /* Disable the toctree view */
 #what-s-new div.toctree-wrapper {
 	height: 0px;
@@ -421,6 +417,20 @@ nav li .current a, nav .active a {
 
 .blog-collection-entry {
 	padding: 10px 0 20px;
+}
+
+/******************************************************************************/
+/*  Getting Started                                                           */
+/******************************************************************************/
+
+/* Embolden feature requirements */
+.block > #getting-started dt {
+	font-weight: bold;
+}
+
+/* Indent package dependencies. */
+.block > #getting-started dd {
+	margin-left: 40px;
 }
 
 /******************************************************************************/
