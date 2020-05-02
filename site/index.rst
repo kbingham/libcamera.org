@@ -20,6 +20,7 @@ What's New
    Home <self>
    Getting Started <getting-started>
    Contribute <contributing>
+   FAQ <faq>
    Docs <docs>
 
 .. toctree::
