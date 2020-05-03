@@ -520,6 +520,16 @@ footer {
 
 @media only screen and (max-width: 700px) {
     
+    /* Prevent the nav bar from being fixed to the top */
+    .sticky {
+      position: absolute;
+    }
+
+    /* Pad pages to below the nav bar */
+    #content > .block > div.section:first-of-type:not(#welcome) {
+        margin-top: 120px;
+    }
+
     .column {
         width: 100%;
     }
@@ -544,7 +554,8 @@ footer {
     div.highlight-default > div.highlight > pre, div.highlight-shell > div.highlight > pre {
         width: 95%;
     }
-    
+
+    /* Hide the hero image on mobile */
     #welcome .heroimage {
         display: none;
     }
@@ -554,7 +565,6 @@ footer {
         line-height: 65px;
         font-weight: bold!important;
         text-align: center;
-        padding-top: 300px;
     }
     
     .herotext p:last-of-type { 
@@ -562,7 +572,6 @@ footer {
     }
     
     #welcome p {
-        width: 80%;
         margin: auto;
         text-align: center;
     }
@@ -615,10 +624,6 @@ footer {
     position: static;
     margin-top: 95px;
 }
-    
-    #contributing {
-        margin-top: 120px;
-    }
 
     #what-s-new ul {
 	width: 90%;
