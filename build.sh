@@ -13,6 +13,10 @@ html_dir=${PWD}/html
 libcamera_dir=${PWD}/libcamera
 
 cleanup() {
+	if [[ ! -z "${localdir}" ]] ; then
+		return 0;
+	fi
+
 	if [[ "${keep}" == true && $1 != force ]] ; then
 		return 0
 	fi
@@ -22,6 +26,10 @@ cleanup() {
 }
 
 checkout_libcamera() {
+	if [[ ! -z "${localdir}" ]] ; then
+		return 0;
+	fi
+
 	rm -rf "${libcamera_dir}"
 	git clone -b "${libcamera_branch}" "${libcamera_url}" "${libcamera_dir}"
 }
@@ -62,6 +70,11 @@ parse_options() {
 		case $1 in
 		-b|--branch)
 			libcamera_branch="$2"
+			shift 2
+			;;
+		-d|--dir)
+			localdir="$2"
+			libcamera_dir="${localdir}"
 			shift 2
 			;;
 		-h|--help)
