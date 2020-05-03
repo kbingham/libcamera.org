@@ -5,7 +5,7 @@ Welcome
 
   .. container:: heroimage
 
-    .. image:: images/libcamera_library.png
+    .. image:: images/libcamera_hero.png
        :alt: Connecting the real world with software
 
   .. container:: herotext
