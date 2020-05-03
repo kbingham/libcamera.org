@@ -63,6 +63,7 @@ h6:hover a.headerlink {
 
 body, h1, h2, h3, h4,h5, h6, p {
   font-family: 'Nunito Sans';
+  text-align: justify;
 }
 
 .highlight {
@@ -264,6 +265,7 @@ nav li .current a, nav .active a {
 	line-height: 90px;
 	margin-bottom: 40px;
 	font-weight: 700;
+	text-align: left;
 }
 
 #welcome p strong {
@@ -478,6 +480,7 @@ div.highlight-default > div.highlight > pre {
     height: 100%;
     overflow: auto;
     margin-top: -18px;
+    text-align: left;
 }
 
 #contents .simple a {
