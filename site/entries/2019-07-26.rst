@@ -1,0 +1,16 @@
+.. post:: 26 July 2019
+   :category: news
+   :author: Kieran
+   :language: en
+   :image: 1
+
+
+libcamera in LWN.net
+--------------------
+
+.. image:: logo_lwn.png
+
+Following the presentation by Laurent Pinchart at `OSS Japan`_, Jonathon Corbet has written about libcamera in `LWN.net`_. Read the article at https://lwn.net/Articles/794555/
+
+.. _OSS Japan: https://events19.linuxfoundation.org/events/open-source-summit-japan-2019/program/schedule/
+.. _LWN.net: https://lwn.net/Articles/794555/
