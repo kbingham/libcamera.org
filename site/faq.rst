@@ -52,6 +52,13 @@ Which cameras SoCs (pipeline-handlers) are supported?
   test drivers.
 
 
+I have an Intel™ based laptop or tablet with an IPU3 running Windows™. Can I use libcamera to run my Webcam?
+  Currently, No. -- The ACPI tables created for those devices are not
+  compatible with the Linux drivers, and as such the camera sensors can not be
+  correctly identified on those platforms. We hope to develop a means to adapt
+  these tables and make them compatible with Linux in the future.
+
+
 What role does the Pipeline Handler play?
   The Pipeline Handlers are used for managing any device specific code for a
   given platform. A 'Simple Pipeline Handler' is under development which will
