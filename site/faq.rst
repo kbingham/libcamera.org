@@ -35,7 +35,7 @@ Does this mean the camera stack is completely open?
   which are built as dynamically-linked shared objects, and are loaded at
   run-time. Open-source modules are identified based on digital signatures,
   while closed-source modules are isolated inside a Sandbox environment with
-  restricted acess to the system, reducing the impact of untrusted binary
+  restricted access to the system, reducing the impact of untrusted binary
   blobs.
  
 
