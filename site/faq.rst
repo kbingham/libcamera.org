@@ -47,8 +47,9 @@ libcamera has been described as “the MESA of the camera stack”. What does th
 
 
 Which cameras SoCs (pipeline-handlers) are supported?
-  Currently supported platforms include the Intel IPU3, RockChip RK3399, UVC,
-  as well as pipeline-handler support for the VIMC Kernel test drivers.
+  Currently supported platforms include the Intel IPU3 (selected devices only),
+  RockChip RK3399, UVC, as well as pipeline-handler support for the VIMC Kernel
+  test drivers.
 
 
 What role does the Pipeline Handler play?
