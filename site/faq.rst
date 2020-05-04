@@ -65,10 +65,6 @@ What role does the Pipeline Handler play?
   support a range of simplistic platforms with a common generic handler.
 
 
-Which camera protocols are supported?
-  libcamera supports cameras that use MIPI CSI-2 protocols.
-
-
 Can I use libcamera to access photos on digital cameras?
   No, libcamera is a library for controlling embedded camera hardware, it’s not
   an application for accessing photos and has no relationship to gphoto2.
