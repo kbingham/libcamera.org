@@ -31,7 +31,7 @@ compile_doxygen() {
 	mkdir "${libcamera_dir}/build"
 	(
 		cd "${libcamera_dir}/build"
-		meson ..
+		meson setup -Dpipelines=vimc ..
 		ninja Documentation/api-html
 	)
 }
