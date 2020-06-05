@@ -46,10 +46,10 @@ libcamera has been described as “the MESA of the camera stack”. What does th
   simplify development for application developers.
 
 
-Which cameras SoCs (pipeline-handlers) are supported?
+Which devices (pipeline-handlers) are supported?
   Currently supported platforms include the Intel IPU3 (selected devices only),
-  RockChip RK3399, UVC, as well as pipeline-handler support for the VIMC Kernel
-  test drivers.
+  NXP i.MX7, Raspberry Pi 3 and 4, RockChip RK3399, as well as UVC webcams and
+  the VIMC virtual test device.
 
 
 I have an Intel™ based laptop or tablet with an IPU3 running Windows™. Can I use libcamera to run my Webcam?
